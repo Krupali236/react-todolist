@@ -240,7 +240,7 @@ const TodoList = () => {
           <div className="my-4">
             <button
               type="submit"
-              className="p-3 rounded-md lg:w-96 w-52 mx-5 bg-blue-800 text-white font-semibold text-lg"
+              className="p-3 rounded-md w-96 mx-5 bg-blue-800 text-white font-semibold text-lg"
               onClick={handleOnClick}
             >
               {edited ? "Update" : "Add"}
