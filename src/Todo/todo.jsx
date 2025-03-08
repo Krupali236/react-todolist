@@ -360,7 +360,7 @@ const TodoList = () => {
             <div>No Data Found</div>
           )}
         </div>
-        <div className="my-4 flex justify-around">
+        <div className="lg:my-4 sm:my-2 flex justify-around">
           <button
             className="bg-red-700 text-white p-3 lg:w-40 sm:w-32 rounded-md"
             onClick={(e) => handleDeleteSelectedTask(e)}
