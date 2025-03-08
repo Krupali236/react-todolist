@@ -217,7 +217,7 @@ const TodoList = () => {
   };
   return (
     <>
-      <div className="lg:container sm:container container">
+      <div className="w-[300px]">
         <h1 className="text-3xl">TodoInput</h1>
         <div className="my-5 border-2 rounded-md">
           <div className="my-4">
@@ -228,8 +228,8 @@ const TodoList = () => {
               placeholder="New Todo"
               className={
                 !errors?.input
-                  ? "p-4 w-96 rounded-md border-[1px] border-solid border-gray-300"
-                  : "p-4 w-96 rounded-md border-[1px] border-solid border-red-600"
+                  ? "p-4 w-52 lg:w-96 rounded-md border-[1px] border-solid border-gray-300"
+                  : "p-4 w-52 lg:w-96 rounded-md border-[1px] border-solid border-red-600"
               }
               onChange={(e) => handleOnchange(e)}
             />
@@ -240,7 +240,7 @@ const TodoList = () => {
           <div className="my-4">
             <button
               type="submit"
-              className="p-3 rounded-md w-96 mx-5 bg-blue-800 text-white font-semibold text-lg"
+              className="p-3 rounded-md lg:w-96 w-52 mx-5 bg-blue-800 text-white font-semibold text-lg"
               onClick={handleOnClick}
             >
               {edited ? "Update" : "Add"}
@@ -263,7 +263,7 @@ const TodoList = () => {
             )}
           </span>
           <button
-            className="bg-blue-800 w-32 text-white rounded-md mx-4"
+            className="bg-blue-800 w-20 lg:w-32 text-white rounded-md mx-2 lg:mx-4"
             onClick={() => {
               handleDisplay("all");
             }}
@@ -271,7 +271,7 @@ const TodoList = () => {
             All
           </button>
           <button
-            className="bg-blue-800 w-32 text-white rounded-md mx-4"
+            className="bg-blue-800 w-20 lg:w-32 text-white rounded-md mx-2 lg:mx-4"
             onClick={() => {
               handleDisplay("done");
             }}
@@ -279,7 +279,7 @@ const TodoList = () => {
             Done
           </button>
           <button
-            className="bg-blue-800 w-32 text-white rounded-md mx-4"
+            className="bg-blue-800 w-20 lg:w-32 text-white rounded-md mx-2 lg:mx-4"
             onClick={() => {
               handleDisplay("todo");
             }}
