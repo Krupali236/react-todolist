@@ -217,7 +217,7 @@ const TodoList = () => {
   };
   return (
     <>
-      <div className="w-[300px] mx-auto">
+      <div className="w-full lg:w-6/12 mx-auto">
         <h1 className="text-3xl">TodoInput</h1>
         <div className="my-5 border-2 rounded-md">
           <div className="my-4">
@@ -228,8 +228,8 @@ const TodoList = () => {
               placeholder="New Todo"
               className={
                 !errors?.input
-                  ? "p-4 w-52 lg:w-96 rounded-md border-[1px] border-solid border-gray-300"
-                  : "p-4 w-52 lg:w-96 rounded-md border-[1px] border-solid border-red-600"
+                  ? "p-4 w-96 rounded-md border-[1px] border-solid border-gray-300"
+                  : "p-4 w-96 rounded-md border-[1px] border-solid border-red-600"
               }
               onChange={(e) => handleOnchange(e)}
             />
@@ -361,7 +361,7 @@ const TodoList = () => {
         </div>
         <div className="my-4 flex justify-around">
           <button
-            className="bg-red-700 text-white p-3 w-40 rounded-md"
+            className="bg-red-700 text-white p-3 lg:w-40 sm:w-32 rounded-md"
             onClick={(e) => handleDeleteSelectedTask(e)}
           >
             Delete
