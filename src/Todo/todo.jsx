@@ -217,7 +217,7 @@ const TodoList = () => {
   };
   return (
     <>
-      <div className="w-[300px]">
+      <div className="w-[300px] mx-auto">
         <h1 className="text-3xl">TodoInput</h1>
         <div className="my-5 border-2 rounded-md">
           <div className="my-4">
