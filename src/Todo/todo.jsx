@@ -205,7 +205,11 @@ const TodoList = () => {
       setIsDeleteAll(true);
       renderArray([]);
     } else {
+<<<<<<< HEAD
       const deleteTask = todoArray.filter((v, ind) => {
+=======
+      const deleteTask = todoArray.filter((v, ind) => {        
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
         return v?.isSelected !== true;
       });
       setTodoArray(deleteTask);
@@ -217,8 +221,13 @@ const TodoList = () => {
   };
   return (
     <>
+<<<<<<< HEAD
       <div className="w-full lg:w-6/12 md:w-8/12 sm:w-9/12 mx-auto">
         <h1 className="text-3xl">Todo-List</h1>
+=======
+      <div className="w-full lg:w-6/12 mx-auto">
+        <h1 className="text-3xl">TodoInput</h1>
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
         <div className="my-5 border-2 rounded-md">
           <div className="my-4">
             <input
@@ -263,7 +272,11 @@ const TodoList = () => {
             )}
           </span>
           <button
+<<<<<<< HEAD
             className="bg-blue-800 lg:w-32 sm:w-28 text-white rounded-md lg:mx-4 sm:mx-2 md:mx-3"
+=======
+            className="bg-blue-800 w-20 lg:w-32 text-white rounded-md mx-2 lg:mx-4"
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
             onClick={() => {
               handleDisplay("all");
             }}
@@ -271,7 +284,11 @@ const TodoList = () => {
             All
           </button>
           <button
+<<<<<<< HEAD
             className="bg-blue-800 lg:w-32 sm:w-28 text-white rounded-md lg:mx-4 sm:mx-2 md:mx-3"
+=======
+            className="bg-blue-800 w-20 lg:w-32 text-white rounded-md mx-2 lg:mx-4"
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
             onClick={() => {
               handleDisplay("done");
             }}
@@ -279,7 +296,11 @@ const TodoList = () => {
             Done
           </button>
           <button
+<<<<<<< HEAD
             className="bg-blue-800 lg:w-32 sm:w-28 text-white rounded-md lg:mx-4 sm:mx-2 md:mx-3"
+=======
+            className="bg-blue-800 w-20 lg:w-32 text-white rounded-md mx-2 lg:mx-4"
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
             onClick={() => {
               handleDisplay("todo");
             }}
@@ -367,13 +388,21 @@ const TodoList = () => {
             Delete
           </button>
           <button
+<<<<<<< HEAD
             className="bg-red-700 text-white p-3 lg:w-40 sm:w-32 mx-2 rounded-md"
+=======
+            className="bg-red-700 text-white p-3 w-40 rounded-md"
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
             onClick={(e) => handleDeleteDoneTask(e)}
           >
             Delete Done Task
           </button>
           <button
+<<<<<<< HEAD
             className="bg-red-700 text-white p-3 lg:w-40 sm:w-32 mx-2 rounded-md"
+=======
+            className="bg-red-700 text-white p-3 w-40 rounded-md"
+>>>>>>> 298a9ce8018bd651df13c5764c96744c5675d088
             onClick={(e) => HandleDeleteAll(e)}
           >
             Delete All Task
